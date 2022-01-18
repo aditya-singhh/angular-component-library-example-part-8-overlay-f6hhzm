@@ -1,0 +1,144 @@
+<foo-overlay-side-panel></foo-overlay-side-panel>
+<div class="page-container">
+  <h1>Dashboard</h1>
+  <app-grid-container>
+    <div gridCell gcColSpan="2" gcRowSpan="3" class="margin-0 padding-0">
+      <foo-card [type]="CardType.DEFAULT">
+        <foo-card-header>
+          <h3 class="margin-0">Default Card</h3>
+        </foo-card-header>
+        <foo-card-body>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div style="margin-top: 1rem;" class="btn btn-primary" (click)="showMore()">Show More</div>
+          <div style="margin-top: 1rem;" class="btn btn-success" (click)="showEvenMore()">Show Even More</div>
+        </foo-card-body>
+      </foo-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-card [type]="CardType.PRIMARY">
+        <foo-card-header>
+          <h3 class="margin-0">Primary Card</h3>
+        </foo-card-header>
+        <foo-card-body>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </foo-card-body>
+      </foo-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-flip-card [flipAxis]="FlipAxis.Y">
+        <foo-front-card>
+          <foo-card [type]="CardType.SECONDARY">
+            <foo-card-header>
+              <h3 class="margin-0">Secondary Front Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-front-card>
+        <foo-back-card>
+          <foo-card [type]="CardType.BLANK">
+            <foo-card-header>
+              <h3 class="margin-0">Blank Back Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-back-card>
+      </foo-flip-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-flip-card [flipAxis]="FlipAxis.X">
+        <foo-front-card>
+          <foo-card [type]="CardType.SUCCESS">
+            <foo-card-header>
+              <h3 class="margin-0">Success Front Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-front-card>
+        <foo-back-card>
+          <foo-card [type]="CardType.DANGER">
+            <foo-card-header>
+              <h3 class="margin-0">Danger Back Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-back-card>
+      </foo-flip-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-card [type]="CardType.INFO">
+        <foo-card-header>
+          <h3 class="margin-0">Info Card</h3>
+        </foo-card-header>
+        <foo-card-body>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </foo-card-body>
+      </foo-card>
+    </div>
+    <div gridCell gcColSpan="2" class="card card-body">
+      <foo-flip-card>
+        <foo-front-card>
+          <foo-card [type]="CardType.WARNING">
+            <foo-card-header>
+              <h3 class="margin-0">Warning Front Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-front-card>
+        <foo-back-card>
+          <foo-card [type]="CardType.DEFAULT">
+            <foo-card-header>
+              <h3 class="margin-0">Default Back Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-back-card>
+      </foo-flip-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-flip-card>
+        <foo-front-card>
+          <foo-card [type]="CardType.DANGER">
+            <foo-card-header>
+              <h3 class="margin-0">Danger Front Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-front-card>
+        <foo-back-card>
+          <foo-card [type]="CardType.SECONDARY">
+            <foo-card-header>
+              <h3 class="margin-0">Secondary Back Card</h3>
+            </foo-card-header>
+            <foo-card-body>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </foo-card-body>
+          </foo-card>
+        </foo-back-card>
+      </foo-flip-card>
+    </div>
+    <div gridCell class="card card-body">
+      <foo-card [type]="CardType.BLANK">
+        <foo-card-header>
+          <h3 class="margin-0">Blank Card</h3>
+        </foo-card-header>
+        <foo-card-body>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </foo-card-body>
+      </foo-card>
+    </div>
+  </app-grid-container>
+</div>
